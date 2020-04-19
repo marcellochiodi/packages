@@ -1,0 +1,28 @@
+\name{MLANP-package}
+\alias{MLANO-package}
+\alias{MLANP}
+\docType{package}
+\title{Tools for teaching Non Parametric Statistics and Linear Models and other related topics. Lectures of Marcello Chiodi, University of Palermo
+}
+\description{mainly or my lessons. Tools for teaching Non Parametric Statistics and Linear Models and other related topics. Lectures of Marcello Chiodi, University of Palermo. Two different courses: Non parametric statistcs; Linear models and related Topics}
+
+\details{
+\tabular{ll}{
+Package: \tab MLANP\cr
+Type: \tab Package\cr
+Version: \tab 1.1\cr
+Date: \tab 2019-01-10\cr
+License: \tab GPL (>=2) \cr
+Depends: \tab R (>= 2.14.0), mapdata,rgl \cr
+Suggests: \tab MASS \cr
+}
+\code{etasclass} is the main function of the package \code{etasFLP}.
+}
+\author{
+Marcello Chiodi
+
+Maintainer: Marcello Chiodi<marcello.chiodi@unipa.it>
+}
+
+\note{The package is intended for the use in my lessons, but can be used for any related topic. non care is put on computational issues. Code often is written to explain some topics (as cross validations arguments, where condensed formulas are not used)
+}

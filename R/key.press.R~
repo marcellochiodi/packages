@@ -1,0 +1,10 @@
+
+key.press   <- function(ikey=TRUE){
+                    msg="premere enter --->"
+                    if(ikey){
+                    cat(msg)
+                    scan()
+                    }
+                    }
+########################################################################
+

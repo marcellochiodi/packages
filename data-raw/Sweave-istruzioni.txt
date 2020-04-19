@@ -1,0 +1,15 @@
+passo 1:
+realizzare il file con estensione .Rnw (vedere files .Rnw come template) 
+
+
+che contiene istruzioni Latex e codice R
+il codice va incluso in <<>> (vedere template Rnw)
+per fare riferimento a variabili o a risultati di R usare \Sexpr
+per esempio \Sexpr{n} darà nel file tex il valore di n
+passo 2
+passarlo sotto R con l'istruzione 
+Sweave: vedere file Sweavemake.txt per l'esecuzione tipo;
+aggiunta del maggio 2011: usare l'istruzione Sweave("nomefile.Rnw",driver = RweaveLatex(),syntax=SweaveSyntaxNoweb)
+ in output si ha il codice latex
+passo3 
+compilare il file latex

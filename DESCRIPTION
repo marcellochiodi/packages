@@ -1,0 +1,15 @@
+Package: MLANP
+Type: Package
+Title: Non parametric statistics and linear model
+Version: 1.4.1
+Date: 2020-4-19
+Description: Tools for teaching linear models and non parametric statistics; used in lectures of Marcello Chiodi, University of Palermo.
+License: GPL (>= 2)
+Depends: R (>= 2.14.0)
+Imports: ks,mvtnorm,rgl,rpanel,ellipse,MASS,utils
+Suggests:
+Authors@R: c(person("Marcello", "Chiodi",  role = c("aut", "cre"),email = "marcello.chiodi@unipa.it"))
+Author: Marcello Chiodi <marcello.chiodi@unipa.it>
+Maintainer: Marcello Chiodi <marcello.chiodi@unipa.it>
+RoxygenNote: 7.1.0
+LazyData: true

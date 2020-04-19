@@ -1,0 +1,68 @@
+\name{MLA.first4}
+\alias{MLA.first4}
+%- Also NEED an '\alias' for EACH other topic documented here.
+\title{Computes the first four moments}
+
+\description{Computes the first four moments of a numeric array. 
+%%  ~~ A concise (1-5 lines) description of what the function does. ~~
+}
+\usage{
+MLA.first4(x)
+}
+%- maybe also 'usage' for other objects documented here.
+\arguments{
+  \item{x}{a numeric array
+%%     ~~Describe \code{x} here~~
+}
+}
+\details{For matrices or data.
+frames use apply
+%%  ~~ If necessary, more details than the description above ~~
+}
+\value{a list with the following components:
+%%  ~Describe the value returned
+%%  If it is a LIST, use
+  \item{\code{m1}}{The first moment (the arithmetic mean)}
+ \item{\code{m2}}{The second central moment (the population variance)}
+  \item{\code{m3}}{The third central moment }
+  \item{\code{m4}}{The fourth central moment }
+  \item{\code{g1}}{gamma1 skewness index (0 for symmetrical distributions)}
+  \item{\code{g2}}{gamma2 kurtosis index (3 for the normal distribution)}
+%% ...
+}
+\references{
+%% ~put references to the literature/web site here ~
+}
+\author{
+%%  ~~who you are~~
+}
+\note{
+%%  ~~further notes~~
+}
+
+%% ~Make other sections like Warning with \section{Warning }{....} ~
+
+\seealso{
+%% ~~objects to See Also as \code{\link{help}}, ~~~
+}
+\examples{
+##---- Should be DIRECTLY executable !! ----
+##-- ==>  Define data, use random,
+##--	or do  help(data=index)  for the standard data sets.
+
+## The function is currently defined as
+function (x) 
+{
+    m = mean(x)
+    m2 = mean((x - m)^2)
+    m3 = mean((x - m)^3)
+    m4 = mean((x - m)^4)
+    g1 = m3/(m2^1.5)
+    g2 = m4/(m2^2)
+    return(list(moments = c(m, m2, m3, m4), b = c(g1, g2)))
+  }
+}
+% Add one or more standard keywords, see file 'KEYWORDS' in the
+% R documentation directory.
+\keyword{ ~kwd1 }
+\keyword{ ~kwd2 }% __ONLY ONE__ keyword per line

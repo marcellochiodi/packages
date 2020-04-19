@@ -1,0 +1,19 @@
+
+draw1=function(x=rnorm(n),n=25,hmin=hmax/1000,hmax=diff(range(x)),ind=1,draw.sing=TRUE){
+			h 	=((hmin)+(hmax))/2
+pannello <- rp.control(title="Kernel options",
+#			size=c(400,300),
+			y = x, 
+			h 	=((hmin)+(hmax))/2,
+			ind	=ind,
+			draw.sing=draw.sing
+			)
+#Sys.sleep(2.)
+rp.slider(pannello, h, hmin, hmax, likelygen,log=TRUE, title="h=bandwidth")
+rp.radiogroup(pannello, ind,
+       c(1,2,3),   labels=c("Normal kernel","Uniform kernel","Comparison of 4 kernels"),initval=1 ,
+       action = likelygen, title = "Plot type")
+rp.checkbox(pannello,draw.sing , action = likelygen, title ="Draw individual components")
+#rp.do(pannello, likelygen)
+return(x)
+}
